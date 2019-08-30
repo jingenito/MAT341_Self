@@ -1,0 +1,11 @@
+ I already know Git but this is useful vi practive
+ 
+ git add [file_name]
+ git commit -m "Message"
+ git pull
+ git push
+
+ git stash save
+ git stash pop
+ git stash list
+ git status
