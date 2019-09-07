@@ -1,0 +1,8 @@
+VI Commands:
+
+vi [name].txt		opens vi editor in the current directory and creates the file if it doesnt exist
+i	start editing
+esc	stop editing
+:[line_number]		jump to the specified line number
+:w	save file
+:q	quit and go back to terminal
