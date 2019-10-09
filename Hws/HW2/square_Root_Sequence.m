@@ -6,7 +6,7 @@
 %             root sequence.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function val = squareRootSequence(m,n)
+function val = square_Root_Sequence(m,n)
 
 val = [];
 for i=1:n

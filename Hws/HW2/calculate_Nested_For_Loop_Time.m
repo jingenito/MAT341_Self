@@ -5,7 +5,7 @@
 %Input: 1) N: Amount of iterations for each for-loop.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function time = calculateNestedForLoopTime(N)
+function time = calculate_Nested_For_Loop_Time(N)
 tic
 k=0;
 for i1 = 1:N
