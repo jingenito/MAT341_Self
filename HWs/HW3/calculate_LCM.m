@@ -1,11 +1,29 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FUNCTION: Computes the Least Common Multiple of any two integers by
+%          multiplying them together and dividing by their Greatest
+%          Common Divisor.
+%
+%Input: 1) x: any integer
+%       2) y: any integer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function lcm_val = calculate_LCM(x,y)
 
 gcd = calculate_GCD(x, y);
 lcm_val = (x * y) / gcd;
 
 
-%function that calculates the GCD of two integers, to be used in
-%calculate_LCM(x,y)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FUNCTION: Computes the Greatest Common Divisor of any two integers by
+%          looping backwards through a sorted list of divisors for each
+%          integer until the first common divisor is found, which can be
+%          guaranteed to be the Greatest Common Divisor since the list is
+%          sorted.
+%
+%Input: 1) x: any integer
+%       2) y: any integer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function gcd_val = calculate_GCD(x, y)
 
 %calculate vectors of divisors for each integer
@@ -24,7 +42,12 @@ for i=length(div_Vec_X):-1:1
 end
 
 
-%function that returns a sorted vector of the divisors of an integer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FUNCTION: Computes a sorted vector of divisors for any integer.
+%
+%Input: 1) x: any integer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function div_Vec = calculate_Divisors(x)
 
 div_Vec = [1]; %initialize the vector to just contain 1
