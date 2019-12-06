@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function OpCount = go_Go_Gaussian_Elimination(N)
-A = rand(N,N) %set an nxn matrix of random values
+A = rand(N,N); %set an nxn matrix of random values
 OpCount = 0; %initialize the counter
 
 %Row Echelon Form
