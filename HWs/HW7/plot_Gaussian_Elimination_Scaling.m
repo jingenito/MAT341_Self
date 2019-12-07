@@ -26,4 +26,5 @@ plot(NVec,opVec,'Color',color,'LineWidth',lw)
 xlabel('Matrix Dimension: N')
 ylabel('Operation Count')
 
-
+%(a)The number of operations required to row reduce a matrix scales
+%   exponentially with N since the loglog plot is a line.
